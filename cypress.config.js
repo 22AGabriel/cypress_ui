@@ -5,5 +5,13 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
+    excludeSpecPattern:[
+      "**/1-getting-started/*.js",
+      "**/2-advanced-examples/*.js",
+    ],
+    "testIsolation": false,
+    chromeWebSecurity: false
   },
+  "viewportWidth":1920,
+  "viewportHeight":1080,
 });
