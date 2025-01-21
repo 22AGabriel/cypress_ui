@@ -10,7 +10,8 @@ module.exports = defineConfig({
       "**/2-advanced-examples/*.js",
     ],
     "testIsolation": false,
-    chromeWebSecurity: false
+    chromeWebSecurity: false,
+    baseUrl: "https://demoqa.com"
   },
   "viewportWidth":1920,
   "viewportHeight":1080,
