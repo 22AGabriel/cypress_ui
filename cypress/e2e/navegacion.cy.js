@@ -1,6 +1,11 @@
 /// <reference types="cypress" />
 
-describe('Navegación', () => {
+/* 
+{browser: 'chrome'} configuración personalizada para correr solo en Chrome
+o
+{browser: '!chrome'} configuración personalizada para correr en cualquier navegador excepto Chrome
+*/
+describe('Navegación', {browser: 'chrome'}, () => {
     it('Navegación a Google', () => {
         cy.visit('https://www.google.com')
     })

@@ -3,7 +3,12 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "cypress open"
+    "test:ui": "cypress open",
+    "test:headless": "cypress run",
+    "test:headless:chrome": "cypress run --browser chrome",
+    "test:headless:edge": "cypress run --browser edge",
+    "test:headless:chrome-navegacion": "cypress run --browser chrome --spec cypress/e2e/navegacion.cy.js",
+    "test:headless:edge-navegacion-localizadores": "cypress run --browser edge --spec cypress/e2e/navegacion.cy.js,cypress/e2e/localizadores.cy.js"
   },
   "keywords": [],
   "author": "",
